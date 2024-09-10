@@ -1,0 +1,44 @@
+domain: NAM11 
+
+bukovsky:
+        pampa      : /pampa/poitras/DATA/bukovsky/NetCDF/NAM11 
+        chinook    : /chinook/veilleux/DATA/Bukovsky # Original NetCDF Bukovsky file
+        
+
+GEM5:
+        fst   : /pampa/poitras/DATA/GEM5/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes/Samples
+        NetCDF: /pampa/poitras/DATA/GEM5/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes/Samples_NetCDF
+        step0 : /pampa/poitras/DATA/GEM5/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes/Samples_NetCDF/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes_step0/pm2013010100_00000000p.nc
+        
+
+CALIPSO:
+        hdf   : /pampa/poitras/DATA/CALIPSO/CAL_LID_L2_05kmCPro-Standard-V4/hdf
+        NetCDF: /pampa/poitras/DATA/CALIPSO/CAL_LID_L2_05kmCPro-Standard-V4/NetCDF
+        list  : /pampa/poitras/DATA/CALIPSO/CAL_LID_L2_05kmCPro-Standard-V4/list
+
+MODIS:
+        hdf   : /pampa/poitras/DATA/MODIS/MXD06_L2/hdf    # MXD06 stands for MOD06, MYD06        # MXD06_L2 must be kept
+        NetCDF: /pampa/poitras/DATA/MODIS/MXD06_L2/NetCDF # MXD06 stands for MOD06, MYD06, MCD06 # MXD06_L2 must be kept
+        list  : /pampa/poitras/DATA/MODIS/MXD06_L2/list   # MXD06 stands for MOD06, MYD06, MCD06 # MXD06_L2 must be kept
+
+COSP2:   
+        input : /pampa/poitras/DATA/COSP2/COSPIN/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes
+        output: /pampa/poitras/DATA/COSP2/COSPOUT/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes
+
+CALIPSOvsMODIS:
+        NetCDF: /pampa/poitras/DATA/CALIPSOvsMODIS/NetCDF
+        png   : /home/veilleux/Projet/Projet_SACHR/analyses_and_figures/CALIPSOvsMODIS/png
+
+CALIPSOvsCOSP2vsGEM5 : /pampa/poitras/DATA/CALIPSOvsCOSP2vsGEM5
+
+CALIPSOvsCOSP2vsGEM5_maps : 
+        NetCDF   : /chinook/veilleux/DATA/CALIPSOvsGEM5vsCOSP/NetCDF_HighMidLow_cloudcover_map
+        Profiles : /chinook/veilleux/DATA/CALIPSOvsGEM5vsCOSP
+        png      : /home/veilleux/Projet/Projet_SACHR/analyses_and_figures/CALIPSOvsCOSP2vsGEM5/png
+        
+CALIPSO_CHINOOK :
+        NetCDF: /chinook/veilleux/DATA/CALIPSO/CAL_LID_L2_05kmCPro-Standard-V4/NetCDF
+        list  : /home/veilleux/Projet/Projet_SACHR/analyses_and_figures/NAM11
+        
+GEM5_CHINOOK:
+        NetCDF: /chinook/veilleux/DATA/COSP2/COSPIN/COSP2_NAM-11m_ERA5_GEM5_CLASS_NEWVEG_newP3-SCPF_SN_Lakes/NetCDF
